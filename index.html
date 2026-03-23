@@ -582,41 +582,44 @@
         <p>Tell us a bit about your property and we'll follow up quickly with a clear, no-pressure quote.</p>
       </div>
       <div class="contact-grid">
-        <form>
-          <div>
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Your name" required />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="you@example.com" required />
-          </div>
-          <div>
-            <label for="phone">Phone</label>
-            <input id="phone" type="tel" placeholder="(503) 555-1234" required />
-          </div>
-          <div>
-            <label for="service">Service Needed</label>
-            <select id="service">
-              <option>Pressure Washing</option>
-              <option>Soft Washing</option>
-              <option>Deck Cleaning</option>
-              <option>Exterior Wall Cleaning</option>
-              <option>Concrete Care</option>
-              <option>Multiple / Not Sure</option>
-            </select>
-          </div>
-          <div>
-            <label for="message">Tell us about your project</label>
-            <textarea id="message" placeholder="Example: 2-story home in Sherwood, siding + driveway, moss on north side."></textarea>
-          </div>
-          <button type="submit" class="btn-primary">Send Request</button>
-        </form>
-
-        <div class="contact-meta">
-          <p><strong>Call or text:</strong> <a href="tel:15036108894">(503) 610-8894</a></p>
-          <p><strong>Based in:</strong> Sherwood, OR & surrounding areas</p>
-          <p><strong>Service Areas:</strong></p>
+        <form action="https://formspree.io/f/xgongvjq" method="POST">
+  <div>
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name" placeholder="Your name" required />
+  </div>
+  
+  <div>
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" placeholder="you@example.com" required />
+  </div>
+  
+  <div>
+    <label for="phone">Phone</label>
+    <input id="phone" type="tel" name="phone" placeholder="(503) 555-1234" required />
+  </div>
+  
+  <div>
+    <label for="service">Service Needed</label>
+    <select id="service" name="service">
+      <option>Pressure Washing</option>
+      <option>Soft Washing</option>
+      <option>Deck Cleaning</option>
+      <option>Exterior Wall Cleaning</option>
+      <option>Concrete Care</option>
+      <option>Multiple / Not Sure</option>
+    </select>
+  </div>
+  
+  <div>
+    <label for="message">Tell us about your project</label>
+    <textarea id="message" name="message" placeholder="Example: 2-story home in Sherwood, siding + driveway, moss on north side." rows="5"></textarea>
+  </div>
+  
+  <button type="submit" class="cta-button">Send Request</button>
+  
+  <input type="hidden" name="_subject" value="New Quote Request - Tandem Exteriors">
+  <input type="hidden" name="_next" value="https://tandemexteriors.com">
+</form>
           <ul class="service-areas">
             <li>Sherwood</li>
             <li>Tigard</li>
